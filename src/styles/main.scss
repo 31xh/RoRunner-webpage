@@ -1,0 +1,269 @@
+@import './vars';
+@import './mixins';
+@import 'navbar';
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* Fonts */
+p {
+    .roboto-font {
+        font-family: "Roboto Flex", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    line-height: 2.3rem;
+}
+
+.ro-runner-title {
+    font-family: $rorunner-font-title;
+    font-weight: 900;
+    font-size: 2.5rem;
+    line-height: 1.2;
+    color: #faf7f7;
+}
+
+.ro-runner-sub-title {
+    font-family: $rorunner-font-title;
+    font-weight: 900;
+    font-size: 2.5rem;
+    line-height: 1.2;
+    color: #faf7f7;
+}
+
+.py-50vh {
+    padding-top: 50vh;
+    padding-bottom: 50vh;
+}
+
+.py-40vh {
+    padding-top: 20vh;
+    padding-bottom: 20vh;
+}
+
+.inset-0 {
+    @include inset(0);
+}
+
+.opacity-full {
+    opacity: 1;
+}
+
+.opacity-none {
+    opacity: 0;
+}
+
+.transition-opacity {
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Parallax */
+
+.logo-parallax {
+    z-index: 10;
+
+    img {
+        @include height(40vh);
+    }
+}
+
+.parallax-bg {
+    background-image: url("https://res.cloudinary.com/dhpjybus4/image/upload/v1754155270/parallaxbg_1_yf6fju.png");
+    @include image-adapt(center, no-repeat, cover, cover);
+    ;
+    position: absolute;
+    z-index: 0;
+    @include inset(0)
+}
+
+.parallax-1 {
+    background-image: url("https://res.cloudinary.com/dhpjybus4/image/upload/v1754155274/Frame_1_amu7zl.png");
+    @include image-adapt(center, no-repeat, cover, cover);
+    position: absolute;
+    z-index: 5;
+    @include inset(0)
+}
+
+.parallax-2 {
+    background-image: url("https://res.cloudinary.com/dhpjybus4/image/upload/v1754161088/Frame_2_r0qalo.png");
+    @include image-adapt(center, no-repeat, cover, cover);
+    position: absolute;
+    z-index: 10;
+    @include inset(0);
+}
+
+.parallax-3 {
+    background-image: url("https://res.cloudinary.com/dhpjybus4/image/upload/v1754161089/Frame_3_t1ze4y.png");
+    @include image-adapt(center, no-repeat, cover, cover);
+    position: absolute;
+    z-index: 15;
+    @include inset(0)
+}
+
+.parallax-divider {
+    width: 100%;
+    position: absolute;
+    @include inset(0);
+    z-index: 20;
+    margin-bottom: 40px;
+}
+
+// Hero
+
+.padding-top {
+    padding-top: 300px;
+}
+
+.padding-bottom {
+    padding-bottom: 300px;
+}
+
+.background-color {
+    background-color: $background-color;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+// Slogan
+
+.slogan-div-1 {
+    position: absolute;
+    z-index: 0;
+    @include inset(0);
+}
+
+.slogan-div-2 {
+    position: absolute;
+    @include top(40%)
+}
+
+.bg-slogan {
+    background-image:
+        linear-gradient(to left, rgba(0, 0, 0, 0), rgba(44, 43, 43, 0.733)),
+        url("https://res.cloudinary.com/dhpjybus4/image/upload/v1754087429/hero_h8e4kn.png");
+    @include image-adapt(center, no-repeat, cover, cover);
+    @include height(120vh);
+}
+
+.image-slogan {
+    @include height(200px);
+}
+
+.slogan-title-1 {
+    font-family: $rorunner-font-title;
+    font-weight: 900;
+    line-height: 1.2;
+    color: #faf7f7;
+    font-size: 55px;
+    font-weight: 400;
+    text-shadow:
+        3px 3px 0px #000,
+        5px 5px 10px rgba(0, 0, 0, 0.7);
+}
+
+.slogan-title-2 {
+    font-size: 70px;
+    font-family: $rorunner-font-title;
+    font-weight: 900;
+    line-height: 1.2;
+    color: #faf7f7;
+    text-shadow:
+        3px 3px 0px #000,
+        5px 5px 10px rgba(0, 0, 0, 0.7);
+}
+
+//Features
+
+.title-features {
+    font-size: 70px;
+    font-family: $rorunner-font-title;
+    font-weight: 900;
+    line-height: 1.2;
+    color: #faf7f7;
+    margin: 0;
+    line-height: 0.9;
+}
+
+.feature-desc {
+    font-size: 30px;
+    font-family: $rorunner-font-title;
+    font-weight: 900;
+    color: #faf7f76b;
+}
+
+
+
+.feature-images {
+    position: sticky !important;
+    top: 0;
+}
+
+.background-content-features {
+    background-image: url("https://res.cloudinary.com/dhpjybus4/image/upload/v1755278576/parallax_content_out_t1asxa.png");
+    @include image-adapt(no-repeat, cover);
+}
+
+// Game in beta
+
+.game-beta-bg {
+    background-color: #000000;
+    background-image: url("data:image/svg+xml,%3Csvg width='32' height='64' viewBox='0 0 32 64' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 28h20V16h-4v8H4V4h28v28h-4V8H8v12h4v-8h12v20H0v-4zm12 8h20v4H16v24H0v-4h12V36zm16 12h-4v12h8v4H20V44h12v12h-4v-8zM0 36h8v20H0v-4h4V40H0v-4z' fill='%23545354' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E");
+}
+
+.game-beta-title {
+    font-family: $rorunner-font-title;
+    font-weight: 900;
+    font-size: 4.5rem;
+    line-height: 1.2;
+    color: #faf7f7;
+}
+
+.beta-subtitle {
+    font-family: $rorunner-font-title;
+    font-weight: 900;
+    font-size: 2rem;
+    line-height: 1.2;
+    color: #faf7f7;
+}
+
+.btn-discord {
+    background-color: #5865F2;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+        background-color: #4752C4;
+        color: white;
+    }
+}
+
+// Footer
+
+.logo-footer {
+    @include height(100px);
+}
+
+.ro-runner-sub-title-footer {
+    font-family: $rorunner-font-title;
+    font-weight: 900;
+    font-size: 1.7rem;
+    line-height: 1.2;
+    color: #faf7f7;
+}

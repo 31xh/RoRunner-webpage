@@ -1,0 +1,14 @@
+@import './_vars.scss';
+@import './_mixins.scss';
+
+nav {
+    background-color: transparent;
+    z-index: 100;
+    img {
+        width: 50px;
+        height: auto;
+    }
+
+    
+}
+
