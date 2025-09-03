@@ -1,6 +1,6 @@
 import { useInView } from 'motion/react'
 import { useEffect, useRef } from 'react'
-import { useFeatureStore } from './store'
+import { useFeatureStore } from './Store'
 
 const FeaturesAnim = ({ children, id }) => {
 
