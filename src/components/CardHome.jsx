@@ -1,5 +1,5 @@
 import SideReveal from "./SideReveal"
-import { useFeatureStore } from "Store"
+import { useFeatureStore } from "./Store"
 import classNames from "classnames"
 
 export const CardHome = ({ img, id }) => {
