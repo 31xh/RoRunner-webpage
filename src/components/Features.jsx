@@ -43,12 +43,12 @@ const Features = () => {
                                 </p>
                             </SideReveal>
                         </div>
-                        <div className="text-end col-md-3 text-white mb-5">
+                        <div className="text-end col-md-3 text-white mb-5 ">
                             <Reveal duration={1} delay={0.60}>
-                                <h2 className='title-features px-5 pt-5'>Gameplay</h2>
+                                <h2 className='title-features pe-5 pt-5'>Gameplay</h2>
                             </Reveal>
                             <Reveal duration={1} delay={0.70}>
-                                <p className='title-features px-5'>Features</p>
+                                <p className='title-features pe-5'>Features</p>
                             </Reveal>
                         </div>
                     </div>
