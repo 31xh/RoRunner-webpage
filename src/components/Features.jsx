@@ -35,7 +35,7 @@ const Features = () => {
         <>
             <section className='background-color'>
                 <div className="container-fluid z-1">
-                    <div className="row d-flex">
+                    <div className="row d-flex overflow-x-hidden">
                         <div className="col-md-9 pt-5 mt-4 text-start">
                             <SideReveal duration={1} delay={0.60}>
                                 <p className='feature-desc fw-bolder roboto-font text-end'>
